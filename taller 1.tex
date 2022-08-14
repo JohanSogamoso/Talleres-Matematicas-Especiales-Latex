@@ -1,0 +1,133 @@
+\documentclass[a4paper,11pt,openany]{book}
+\usepackage[utf8]{inputenc}
+\usepackage[left=2.54cm,top=2.54cm,right=2.54cm,bottom=2.54cm]{geometry}
+\usepackage[spanish]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{color}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{pifont}
+\usepackage{marvosym}
+\newtheorem{teo}{Teorema}
+\newtheorem{ejemplo}{Ejemplo}
+\newtheorem{defi}{Definición}
+\newtheorem{coro}{Corolario}
+\newtheorem{prueba}{Prueba}
+\newtheorem{exmp}{Example}[section]
+\newtheorem{ejer}{Ejercicio}[section]
+\def\proof{\paragraph{\textsf{Demostración.} }}
+\def\endproof{\hfill $\blacksquare$ \\}
+\usepackage{multirow, array} % para las tablas
+\usepackage{multirow}
+\usepackage{tabularx}
+\usepackage{float} % para usar [H]
+\usepackage{tikz}
+\usepackage[all]{xy}
+\usepackage{cancel}
+\usetikzlibrary{positioning}
+\usepackage{enumitem}
+\newcommand*{\itembolasazules}[1]{% bolas 3D
+\footnotesize\protect\tikz[baseline=-3pt]%
+\protect\node[scale=.7, circle, shade, ball
+color=green]{\color{white}\Large\bf#1};}
+\usepackage{tcolorbox} 
+\tcbuselibrary{listingsutf8}
+\newtcolorbox[auto counter,number within=section]{example}[2][]
+{colback=green!5!white,colframe=green!75!black,fonttitle=\bfseries, title=Ejercicio~\thetcbcounter: #2,#1}
+\usepackage{background}
+\backgroundsetup{
+placement=center,
+angle=0,
+scale=1.1,
+contents= {{\includegraphics{HojaCuadriculada.png}}}
+}
+ 
+ 
+\begin{document}
+\begin{titlepage}
+ 
+\begin{center}
+\vspace*{-1in}
+\begin{figure}[htb]
+\begin{center}
+\includegraphics[width=7cm]{ETITC.png}
+\end{center}
+\end{figure}
+ 
+ 
+{\sc \huge Escuela Tecnológica Instituto Técnico Central (ETITC)}\\
+\vspace*{0.15in}
+Facultad de sistemas\\
+\vspace*{0.6in}
+\begin{Large}
+\textbf{Taller 1: Operaciones Básicas con Números Complejos} \\
+\textbf{Matem{\'a}ticas Especiales}\\
+\end{Large}
+\vspace*{0.3in}
+\begin{large}
+{\bf Autores} \\
+ 
+\ 
+ 
+Sergio Alejandro Enrrique Caballero Leon\\ 
+Johan Alejandro Sogamoso Camacho \\ 
+\end{large}
+\vspace*{0.3in}
+ 
+\end{center}
+ 
+\begin{center}
+{\bf Presentado a:} \\
+ 
+\ 
+ 
+Carlos Romero \\
+ 
+\
+ 
+Bogot{\'a}, 21 de Agosto de 2022.
+\end{center}
+ 
+\end{titlepage}
+
+\newpage
+
+\definecolor{ao(english)}{rgb}{0.0, 0.5, 0.0}
+
+\begin{center}
+\textbf{Gráfica y Módulo}
+\end{center}
+
+Dado los números $\bf{z_{1}}$ y $\bf{z_{2}}$, en cada uno de los ejercicios \ding{172} al \ding{174} grafique en un plano complejo los números $\bf{z_{1}}$, $\bf{z_{2}}$, $\bf{z_{1}\,+\,z_{2}}$ y $\bf{z_{1}\,-\,z_{2}}$. Finalmente calcule el módulo de los cuatro números.\\
+
+\textcolor{ao(english)}{\ding{172}}\,\quad\,$\bf{z_{1}\,=\,6\,-\,2\,i \quad\,;\,\quad z_{2}\,=\,2\,-\,5\,i}$
+
+\textcolor{ao(english)}{\ding{173}}\,\quad\,$\bf{z_{1}\,=\,-\,5\,+\,5\,i \quad\,;\,\quad z_{2}\,=\,-\,6\,-\,4\,i}$
+
+\textcolor{ao(english)}{\ding{174}}\,\quad\,$\bf{z_{1}\,=\,8\,-\,6\,i \quad\,;\,\quad z_{2}\,=\,-\,4\,-\,8\,i}$
+
+\begin{center}
+\textbf{Operaciones Aritméticas}
+\end{center}
+
+En cada uno de los ejercicios \ding{175} al \ding{179} realice las operaciones indicadas simplificando tanto como sea posible (Recuerde que: $\bf{i^{2}\,=\,-\,1}$)\\
+
+\textcolor{ao(english)}{\ding{175}}\,\quad\,$\bf{3\left(-\,1\,+\,4\,i\right)\,-\,2\left(7\,-\,i\right)}$
+
+\textcolor{ao(english)}{\ding{176}}\,\quad\,$\bf{\left(i\,-\,2\right)\,\left[2\left(1\,+\,i\right)\,-\,3\left(i\,-\,1\right)\right]}$
+
+$$$$
+
+\textcolor{ao(english)}{\ding{177}}\,\quad\,$\bf{\dfrac{\left(2\,+\,i\right)\,\left(3\,-\,2\,i\right)\,\left(1\,+\,2\,i\right)}{\left(1\,-\,i\right)^{2}}}$
+
+$$$$
+
+\textcolor{ao(english)}{\ding{178}}\,\quad\,$\bf{\left(2\,i\,-\,1\right)^{2}\,\left[\dfrac{4}{1\,-\,i}\,+\,\dfrac{2\,-\,i}{1\,+\,i}\right]}$
+
+$$$$
+
+\textcolor{ao(english)}{\ding{179}}\,\quad\,$\bf{\dfrac{i^{4}\,+\,i^{9}\,+\,i^{16}}{2\,-\,i^{5}\,+\,i^{10}\,-\,i^{15}}}$
+
+\end{document}
