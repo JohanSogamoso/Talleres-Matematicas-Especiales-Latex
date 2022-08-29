@@ -1,0 +1,166 @@
+\documentclass[a4paper,11pt,openany]{book}
+\usepackage[utf8]{inputenc}
+\usepackage[left=2.54cm,top=2.54cm,right=2.54cm,bottom=2.54cm]{geometry}
+\usepackage[spanish]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{color}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{pifont}
+\usepackage{marvosym}
+\newtheorem{teo}{Teorema}
+\newtheorem{ejemplo}{Ejemplo}
+\newtheorem{defi}{Definición}
+\newtheorem{coro}{Corolario}
+\newtheorem{prueba}{Prueba}
+\newtheorem{exmp}{Example}[section]
+\newtheorem{ejer}{Ejercicio}[section]
+\def\proof{\paragraph{\textsf{Demostración.} }}
+\def\endproof{\hfill $\blacksquare$ \\}
+\usepackage{multirow, array} % para las tablas
+\usepackage{multirow}
+\usepackage{tabularx}
+\usepackage{float} % para usar [H]
+\usepackage{tikz}
+\usepackage[all]{xy}
+\usepackage{cancel}
+\usetikzlibrary{positioning}
+\usepackage{enumitem}
+\newcommand*{\itembolasazules}[1]{% bolas 3D
+\footnotesize\protect\tikz[baseline=-3pt]%
+\protect\node[scale=.7, circle, shade, ball
+color=green]{\color{white}\Large\bf#1};}
+\usepackage{tcolorbox} 
+\tcbuselibrary{listingsutf8}
+\newtcolorbox[auto counter,number within=section]{example}[2][]
+{colback=green!5!white,colframe=green!75!black,fonttitle=\bfseries, title=Ejercicio~\thetcbcounter: #2,#1}
+\usepackage{background}
+\backgroundsetup{
+placement=center,
+angle=0,
+scale=1.1,
+contents= {{\includegraphics{HojaCuadriculada.png}}}
+}
+ 
+ 
+\begin{document}
+\begin{titlepage}
+ 
+\begin{center}
+\vspace*{-1in}
+\begin{figure}[htb]
+\begin{center}
+\includegraphics[width=7cm]{ETITC.png}
+\end{center}
+\end{figure}
+ 
+ 
+{\sc \huge Escuela Tecnológica Instituto Técnico Central (ETITC)}\\
+\vspace*{0.15in}
+Facultad de sistemas\\
+\vspace*{0.6in}
+\begin{Large}
+\textbf{Taller 2: Forma Polar, Potencias y Raíces} \\
+\textbf{Matem{\'a}ticas Especiales}\\
+\end{Large}
+\vspace*{0.3in}
+\begin{large}
+{\bf Autores} \\
+ 
+\ 
+ 
+Sergio Alejandro Enrrique Caballero Leon\\ 
+Johan Alejandro Sogamoso Camacho \\
+David Andrés Valero Vanegas \\
+\end{large}
+\vspace*{0.3in}
+ 
+\end{center}
+ 
+\begin{center}
+{\bf Presentado a:} \\
+ 
+\ 
+ 
+Carlos Romero \\
+ 
+\
+ 
+Bogot{\'a}, Septiembre de 2022.
+\end{center}
+ 
+\end{titlepage}
+
+\newpage
+
+\definecolor{ao(english)}{rgb}{0.0, 0.5, 0.0}
+
+\begin{center}
+\textbf{Multiplicación}
+\end{center}
+
+En cada uno de los ejercicios \textbf{(\,1\,)} al \textbf{(\,3\,)} realizar lo siguiente:\\
+
+\textbf{a\,)} Calcular el producto de los números complejos $\bf{z_{1}\,\cdot\,z_{2}}$, usando la fórmula de la multiplicación en forma polar.\\
+
+\textbf{b\,)} Escriba \textbf{el resultado del producto} en la forma cartesiana $\bf{z\,=\,x\,+\,i\,y}$ y en la forma exponencial $\bf{z\,=\,r\,e^{i\,\theta}}$ ó $\bf{z\,=\,r\,exp\,(i\,\theta)}$.\\
+
+\textbf{c\,)} Realizar en un plano complejo la gráfica de $\bf{z_{1}}$, $\bf{z_{2}}$ y $\bf{z_{1}\,\cdot\,z_{2}}$.\\
+
+\textcolor{ao(english)}{(\,1\,)} $\bf{z_{1}\,=\,4\,-\,4\,i \quad;\quad z_{2}\,=\,6\,-\,i\,6\,\sqrt{3}}$
+
+\textcolor{ao(english)}{(\,2\,)} $\bf{z_{1}\,=\,2\,-\,i \quad;\quad z_{2}\,=\,-\,2\,+\,2\,i}$
+
+\textcolor{ao(english)}{(\,3\,)} $\bf{z_{1}\,=\,1\,-\,i \quad;\quad z_{2}\,=\,1\,-\,i\,\sqrt{3}}$
+
+\begin{center}
+\textbf{División}
+\end{center}
+
+En cada uno de los ejercicios \textbf{(\,4\,)} al \textbf{(\,6\,)} realizar lo siguiente:\\
+
+\textbf{a\,)} Calcule $\bf{z_{1}\,\div\,z_{2}}$, usando la fórmula de la división en forma polar.\\
+
+\textbf{b\,)} Escriba \textbf{el resultado de la división} en la forma cartesiana $\bf{z\,=\,x\,+\,i\,y}$ y en la forma exponencial $\bf{z\,=\,r\,e^{i\,\theta}}$ ó $\bf{z\,=\,r\,exp\,(i\,\theta)}$.\\
+
+\textbf{c\,)} Realizar en un plano complejo la gráfica de $\bf{z_{1}}$, $\bf{z_{2}}$ y $\bf{z_{1}\,\div\,z_{2}}$.\\
+
+\textcolor{ao(english)}{(\,4\,)} $\bf{z_{1}\,=\,2\,-\,2\,i \quad;\quad z_{2}\,=\,3\,-\,i\,3\,\sqrt{3}}$
+
+\textcolor{ao(english)}{(\,5\,)} $\bf{z_{1}\,=\,-\,1\,-\,i\,\sqrt{3} \quad;\quad z_{2}\,=\,-\,4\,+\,4\,i}$
+
+\textcolor{ao(english)}{(\,6\,)} $\bf{z_{1}\,=\,2\,-\,2\,i \quad;\quad z_{2}\,=\,2\,-\,i\,2\,\sqrt{3}}$
+
+\begin{center}
+\textbf{Potencias Enteras de Números Complejos}
+\end{center}
+
+En cada uno de los ejercicios \textbf{(\,7\,)} al \textbf{(\,8\,)} realizar lo siguiente:\\
+
+\textbf{a\,)} Calcule las potencias indicadas en forma exponencial.\\
+
+\textbf{b\,)} Escriba el resultado final en la forma cartesiana $\bf{z^{n}\,=\,x\,+\,i\,y}$.\\
+
+\textbf{c\,)} Dibujo en uno dos planos complejos los números, $\bf{z}$ y $\bf{z^{n}}$.\\
+
+\textcolor{ao(english)}{(\,7\,)} $\bf{\left(1\,+\,i\,\sqrt{3}\right)^{9}}$
+
+\textcolor{ao(english)}{(\,8\,)} $\bf{\left(2\,-\,2\,i\right)^{5}}$
+
+\begin{center}
+\textbf{Raíces de Números Complejos}
+\end{center}
+
+Hallar las raíces indicadas a continuación y realizar su correspondiente gráfica en el plano complejo.\\
+
+\textcolor{ao(english)}{(\,9\,)} $\bf{\sqrt[3]{8}}$
+
+\textcolor{ao(english)}{(\,10\,)} $\bf{\sqrt[6]{-\,27\,i}}$
+
+\textcolor{ao(english)}{(\,11\,)} $\bf{\sqrt{4\,\sqrt{2}\,+\,i\,4\,\sqrt{2}}}$
+
+\textcolor{ao(english)}{(\,12\,)} $\left(-\,16\,+\,i\,16\,\sqrt{3}\right)^{1\,/\,5}$
+
+\end{document}
