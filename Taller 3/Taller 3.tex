@@ -1,0 +1,132 @@
+\documentclass[a4paper,11pt,openany]{book}
+\usepackage[utf8]{inputenc}
+\usepackage[left=2.54cm,top=2.54cm,right=2.54cm,bottom=2.54cm]{geometry}
+\usepackage[spanish]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{color}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{pifont}
+\usepackage{marvosym}
+\newtheorem{teo}{Teorema}
+\newtheorem{ejemplo}{Ejemplo}
+\newtheorem{defi}{Definición}
+\newtheorem{coro}{Corolario}
+\newtheorem{prueba}{Prueba}
+\newtheorem{exmp}{Example}[section]
+\newtheorem{ejer}{Ejercicio}[section]
+\def\proof{\paragraph{\textsf{Demostración.} }}
+\def\endproof{\hfill $\blacksquare$ \\}
+\usepackage{multirow, array} % para las tablas
+\usepackage{multirow}
+\usepackage{tabularx}
+\usepackage{float} % para usar [H]
+\usepackage{tikz}
+\usepackage[all]{xy}
+\usepackage{cancel}
+\usetikzlibrary{positioning}
+\usepackage{enumitem}
+\newcommand*{\itembolasazules}[1]{% bolas 3D
+\footnotesize\protect\tikz[baseline=-3pt]%
+\protect\node[scale=.7, circle, shade, ball
+color=green]{\color{white}\Large\bf#1};}
+\usepackage{tcolorbox} 
+\tcbuselibrary{listingsutf8}
+\newtcolorbox[auto counter,number within=section]{example}[2][]
+{colback=green!5!white,colframe=green!75!black,fonttitle=\bfseries, title=Ejercicio~\thetcbcounter: #2,#1}
+\usepackage{background}
+\backgroundsetup{
+placement=center,
+angle=0,
+scale=1.1,
+contents= {{\includegraphics{HojaCuadriculada.png}}}
+}
+ 
+ 
+\begin{document}
+\begin{titlepage}
+ 
+\begin{center}
+\vspace*{-1in}
+\begin{figure}[htb]
+\begin{center}
+\includegraphics[width=7cm]{ETITC.png}
+\end{center}
+\end{figure}
+ 
+ 
+{\sc \huge Escuela Tecnológica Instituto Técnico Central (ETITC)}\\
+\vspace*{0.15in}
+Facultad de sistemas\\
+\vspace*{0.6in}
+\begin{Large}
+\textbf{Taller 3: Conjuntos en el Plano Complejo} \\
+\textbf{Matem{\'a}ticas Especiales}\\
+\end{Large}
+\vspace*{0.3in}
+\begin{large}
+{\bf Autores} \\
+ 
+\ 
+ 
+Sergio Alejandro Enrrique Caballero Leon\\ 
+Johan Alejandro Sogamoso Camacho \\
+David Andrés Valero Vanegas \\
+\end{large}
+\vspace*{0.3in}
+ 
+\end{center}
+ 
+\begin{center}
+{\bf Presentado a:} \\
+ 
+\ 
+ 
+Carlos Romero \\
+ 
+\
+ 
+Bogot{\'a}, Septiembre de 2022.
+\end{center}
+ 
+\end{titlepage}
+
+\newpage
+
+\definecolor{ao(english)}{rgb}{0.0, 0.5, 0.0}
+
+\graphicspath{ {images/} }
+
+\begin{center}
+\textbf{Conjuntos}
+\end{center}
+
+En los ejercicios \textbf{(\,1\,)} al \textbf{(\,12\,) graficar}, cada uno en un plano complejo, el conjunto de puntos $\mathnormal{S}$ que satisface la igualdad o desigualdad dada y \textbf{escribir qué tipo de conjunto es:} Círculo, Disco, Anillo, etc. Además decir si el conjunto es Abierto, Cerrado ó Semi-Abierto (ó Semi-Cerrado).\\
+
+\textcolor{ao(english)}{(\,1\,)} $\bf{|z\,-\,4\,+\,3\,i|\,=\,5}$.
+
+\textcolor{ao(english)}{(\,2\,)} $\bf{|z\,+\,2\,-\,5\,i|\,\leq\,4}$.
+
+\textcolor{ao(english)}{(\,3\,)} $\bf{2\,\leq\,|z\,+\,3\,i|\,<\,6}$.
+
+\textcolor{ao(english)}{(\,4\,)} $\bf{2\,<\,|z\,+\,5\,-\,2\,i|\,<\,9}$.
+
+\textcolor{ao(english)}{(\,5\,)} $\bf{|z\,-\,4\,+\,8\,i|\,<\,\dfrac{7}{2}}$.
+
+\textcolor{ao(english)}{(\,6\,)} $\bf{|z\,+\,4\,+\,2\,i|\,=\,6}$.
+
+\textcolor{ao(english)}{(\,7\,)} $\bf{0\,<\,|z\,-\,1\,+\,4\,i|\,\leq\,5}$.
+
+\textcolor{ao(english)}{(\,8\,)} $\bf{2\,\leq\,|z\,-\,1|\,\leq\,9}$.
+
+\textcolor{ao(english)}{(\,9\,)} $\bf{\mathnormal{Im}\,(\overline{z}\,+\,3\,i)\,=\,6}$.
+
+\textcolor{ao(english)}{(\,10\,)} $\bf{\mathnormal{Re}\,(z\,+\,8)\,=\,5}$.
+
+\textcolor{ao(english)}{(\,11\,)} $\bf{\mathnormal{Im}\,(z\,-\,10\,+\,2\,i)\,>\,\dfrac{5}{4}}$.
+
+\textcolor{ao(english)}{(\,12\,)} $\bf{\mathnormal{Re}\,(1\,+\,7\,i\,+\,z)\,>\,\dfrac{2}{3}}$.
+
+\end{document}
