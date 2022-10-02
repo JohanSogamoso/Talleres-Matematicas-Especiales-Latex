@@ -1,0 +1,170 @@
+\documentclass[a4paper,11pt,openany]{book}
+\usepackage[utf8]{inputenc}
+\usepackage[left=2.54cm,top=2.54cm,right=2.54cm,bottom=2.54cm]{geometry}
+\usepackage[spanish]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{color}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{pifont}
+\usepackage{marvosym}
+\newtheorem{teo}{Teorema}
+\newtheorem{ejemplo}{Ejemplo}
+\newtheorem{defi}{Definición}
+\newtheorem{coro}{Corolario}
+\newtheorem{prueba}{Prueba}
+\newtheorem{exmp}{Example}[section]
+\newtheorem{ejer}{Ejercicio}[section]
+\def\proof{\paragraph{\textsf{Demostración.} }}
+\def\endproof{\hfill $\blacksquare$ \\}
+\usepackage{multirow, array} % para las tablas
+\usepackage{multirow}
+\usepackage{tabularx}
+\usepackage{float} % para usar [H]
+\usepackage{tikz}
+\usepackage[all]{xy}
+\usepackage{cancel}
+\usetikzlibrary{positioning}
+\usepackage{enumitem}
+\newcommand*{\itembolasazules}[1]{% bolas 3D
+\footnotesize\protect\tikz[baseline=-3pt]%
+\protect\node[scale=.7, circle, shade, ball
+color=green]{\color{white}\Large\bf#1};}
+\usepackage{tcolorbox} 
+\tcbuselibrary{listingsutf8}
+\newtcolorbox[auto counter,number within=section]{example}[2][]
+{colback=green!5!white,colframe=green!75!black,fonttitle=\bfseries, title=Ejercicio~\thetcbcounter: #2,#1}
+\usepackage{background}
+\backgroundsetup{
+placement=center,
+angle=0,
+scale=1.1,
+contents= {{\includegraphics{HojaCuadriculada.png}}}
+}
+ 
+ 
+\begin{document}
+\begin{titlepage}
+ 
+\begin{center}
+\vspace*{-1in}
+\begin{figure}[htb]
+\begin{center}
+\includegraphics[width=7cm]{ETITC.png}
+\end{center}
+\end{figure}
+ 
+ 
+{\sc \huge Escuela Tecnológica Instituto Técnico Central (ETITC)}\\
+\vspace*{0.15in}
+Facultad de sistemas\\
+\vspace*{0.6in}
+\begin{Large}
+\textbf{Taller 4 : Funciones, Límites y Derivadas en los Complejos} \\
+\textbf{Matem{\'a}ticas Especiales}\\
+\end{Large}
+\vspace*{0.3in}
+\begin{large}
+{\bf Autores} \\
+ 
+\ 
+ 
+Sergio Alejandro Enrrique Caballero Leon\\ 
+Johan Alejandro Sogamoso Camacho \\
+David Andrés Valero Vanegas \\
+\end{large}
+\vspace*{0.3in}
+ 
+\end{center}
+ 
+\begin{center}
+{\bf Presentado a:} \\
+ 
+\ 
+ 
+Carlos Romero \\
+ 
+\
+ 
+Bogot{\'a}, Octubre de 2022.
+\end{center}
+ 
+\end{titlepage}
+
+\newpage
+
+\definecolor{ao(english)}{rgb}{0.0, 0.5, 0.0}
+
+\graphicspath{ {images/} }
+
+\begin{center}
+\textbf{Funciones}
+\end{center}
+
+En los ejercicio \textbf{(\,1\,)} al \textbf{(\,5\,)} sea $f(z)$ la función que que actúa sobre el conjunto dado $\mathnormal{S}$. Hallar la imágen $\mathnormal{S\,'}$ correspondiente a cada conjunto y graficar su respectivo mapeo.\\
+
+\textcolor{ao(english)}{(\,1\,)} $\mathnormal{S}$ es $\boxed{\bf{y\,=\,1\,-\,x}}$ y $\boxed{\bf{f(z)\,=\,z\,+\,i\,(i\,-\,2)}}$.
+
+\textcolor{ao(english)}{(\,2\,)} $\mathnormal{S}$ es $\boxed{\bf{1\,<\,\mathnormal{Re}(z)\,<\,4}}$ y $\boxed{\bf{f(z)\,=\,3\,z}}$.
+
+\textcolor{ao(english)}{(\,3\,)} $\mathnormal{S}$ es $\boxed{\bf{y\,=\,-\,2}}$ y $\boxed{\bf{f(z)\,=\,2\,i\,+\,z\,(1\,+\,i)}}$.
+
+\textcolor{ao(english)}{(\,4\,)} $\mathnormal{S}$ es $\boxed{\bf{-\,1\,<\,\mathnormal{Im}(z)\,<\,2}}$ y $\boxed{\bf{f(z)\,=\,i\,z\,+\,4}}$.
+
+\textcolor{ao(english)}{(\,5\,)} $\mathnormal{S}$ es $\boxed{\bf{\mathnormal{Re}(z)\,>\,3}}$ y $\boxed{\bf{f(z)\,=\,z^{2}}}$.
+
+\begin{center}
+\textbf{Límites}
+\end{center}
+
+En los ejercicio \textbf{(\,6\,)} al \textbf{(\,11\,)} use las \textbf{propiedades de los límites} para calcular los límites indicados.\\
+
+\textcolor{ao(english)}{(\,6\,)} $\bf{\displaystyle\lim_{z \to 2\,i}\,(z^{2}\,-\,\overline{z})}$
+
+\textcolor{ao(english)}{(\,7\,)} $\bf{\displaystyle\lim_{z \to 3\,i}\,\dfrac{\mathnormal{Im}(z^{2})}{z\,+\,\mathnormal{Re}(z)}}$
+
+\textcolor{ao(english)}{(\,8\,)} $\bf{\displaystyle\lim_{z \to 1\,+\,i}\,\dfrac{z^{2}\,+\,1}{z^{2}\,-\,1}}$
+
+\textcolor{ao(english)}{(\,9\,)} $\bf{\displaystyle\lim_{z \to 3\,+\,i\,\sqrt{2}}\,\dfrac{z\,+\,3\,-\,i\,\sqrt{2}}{z^{2}\,+\,6\,z\,+\,11}}$
+
+\textcolor{ao(english)}{(\,10\,)} $\bf{\displaystyle\lim_{z \to 2}\,\dfrac{z\,2\,-\,5\,z\,+\,6}{z^{2}\,-\,4}}$
+
+\textcolor{ao(english)}{(\,11\,)} $\bf{\displaystyle\lim_{z \to 3\,i}\,\dfrac{z^{4}\,+\,10\,z^{2}\,+\,9}{z^{2}\,-\,4\,i\,z\,-\,3}}$
+
+\begin{center}
+\textbf{Derivadas}
+\end{center}
+
+\textcolor{ao(english)}{(\,12\,)} Use la fórmula de la \textbf{Definición de Derivada} mostrada a continuación:\\
+
+$$\bf{f'\,(z_{0})\,=\,\displaystyle\lim_{\Delta\,z \to 0}\,\dfrac{f(z_{0}\,+\,\Delta\,z)\,-\,f(z_{0})}{\Delta\,z}}$$\\
+
+para calcular la derivada de la función $f(z)\,=\,z\,\mathnormal{Im}(z)$ en los puntos $z_{0}\,=\,0$, $z_{0}\,=\,1\,+\,i$ y $z_{0}\,=\,-\,2\,-\,i$. ¿Ésta función es Analítica?\\
+
+En los ejercicio \textbf{(\,13\,)} al \textbf{(\,15\,)} derive las siguientes funciones usando las \textbf{Reglas de la diferencición} (simplifique tanto como sea posible).\\
+
+\textcolor{ao(english)}{(\,13\,)} $\bf{f(z)\,=\,-\,5\,z^{2}\,+\,\dfrac{2\,+\,i}{z^{2}}}$
+
+\textcolor{ao(english)}{(\,14\,)} $\bf{f(z)\,=\,(i\,z^{2}\,+\,3\,z)^{5}}$
+
+\textcolor{ao(english)}{(\,15\,)} $\bf{f(z)\,=\,(z^{2}\,+\,2\,z\,-\,7\,i)^{2}\,(z^{4}\,-\,4\,i\,z)^{3}}$
+
+\begin{center}
+\textbf{Ecuaciones de Cauchy-Riemann}
+\end{center}
+
+En los ejercicio \textbf{(\,16\,)} al \textbf{(\,20\,)}, use las Ecuaciones de Cauchy-Riemann para mostrar si las siguientes funciones complejas son o no Analíticas.
+
+\textcolor{ao(english)}{(\,16\,)} $\bf{f(z)\,=\,z^{2}\,+\,5\,i\,z\,+\,3\,-\,i}$
+
+\textcolor{ao(english)}{(\,17\,)} $\bf{f(z)\,=\,e^{2\,x}\,(\cos\,y\,+\,i\,\sin\,y)}$
+
+\textcolor{ao(english)}{(\,18\,)} $\bf{f(z)\,=\,3\,z^{2}\,+\,5\,z\,-\,6\,i}$
+
+\textcolor{ao(english)}{(\,19\,)} $\bf{f(z)\,=\,4\,z\,-\,6\,\overline{z}\,+\,3}$
+
+\textcolor{ao(english)}{(\,20\,)} $\bf{f(z)\,=\,e^{-\,x}\,(\cos\,y\,-\,i\,\sin\,y)}$
+
+\end{document}
