@@ -43,8 +43,7 @@ angle=0,
 scale=1.1,
 contents= {{\includegraphics{HojaCuadriculada.png}}}
 }
- 
- 
+
 \begin{document}
 \begin{titlepage}
  
@@ -55,8 +54,7 @@ contents= {{\includegraphics{HojaCuadriculada.png}}}
 \includegraphics[width=7cm]{ETITC.png}
 \end{center}
 \end{figure}
- 
- 
+
 {\sc \huge Escuela Tecnológica Instituto Técnico Central (ETITC)}\\
 \vspace*{0.15in}
 Facultad de sistemas\\
@@ -172,13 +170,19 @@ Remplazo y segun S
 $$ -\infty\,<\,y\,<\,\infty $$
 $$ -\infty\,<\,\dfrac{V }{3}\,<\,\infty \iff -\infty\,<\,V\,<\,\infty$$
 
+\newpage
+
+\textcolor{ao(english)}{\ding{46}} Mapeo z-plano.
+
 \begin{center}
      \includegraphics[width=10cm]{Mapeo-Ej-2-z}
 \end{center}
+
+\textcolor{ao(english)}{\ding{46}} Mapeo w-plano.
+
 \begin{center}
      \includegraphics[width=10cm]{Mapeo-Ej-2-w}
 \end{center}
-
 
 \textcolor{ao(english)}{(\,3\,)} $\mathnormal{S}$ es $\boxed{\bf{y\,=\,-\,2}}$ y $\boxed{\bf{f(z)\,=\,2\,i\,+\,z\,(1\,+\,i)}}$.
 
@@ -197,6 +201,29 @@ $$f(x\,+\,i\,y)\,=\,(x\,+\,i\,y)^{2}\,=\,x^{2}\,+\,2\,(x)\,(i\,y)\,+\,(i\,y)^{2}
 $$w\,=\,\underbrace{(x^{2}\,-\,y^{2})}_{u(x\,,\,y)}\,+\,i\,\underbrace{(2\,x\,y)}_{v(x\,,\,y)}$$
 
 $$\underbrace{u\,=\,x^{2}\,-\,y^{2}}_{E_{2}} \qquad;\qquad \underbrace{v\,=\,2\,x\,y}_{E_{3}}$$
+
+\textcolor{ao(english)}{\ding{46}} Sustituir $x\,=\,3$ en $E_{2}$ y despejar $y$.
+
+$$u\,=\,\textcolor{ao}{3}^{2}\,-\,y^{2} \quad\iff\quad u\,=\,9\,-\,y^{2} \quad\iff\quad y^{2}\,=\,9\,-\,u \quad\iff\quad \underbrace{y\,=\,\sqrt{9\,-\,u}}_{E_{4}}$$
+
+\textcolor{ao(english)}{\ding{46}} Despejar x en $E_{3}$ y sustituir en $E_{1}$.
+
+$$v\,=\,2\,x\,y \quad\iff\quad x\,=\,\dfrac{v}{2\,y} \quad\iff\quad \textcolor{ao}{\dfrac{v}{2\,y}}\,>\,3 \quad\iff\quad \underbrace{v\,>\,6\,y}_{E_{5}}$$
+
+\textcolor{ao(english)}{\ding{46}} Sustituir $E_{4}$ en $E_{5}$
+
+$$v\,>\,6\,\textcolor{ao}{\sqrt{9\,-\,u}}$$
+
+\textcolor{ao(english)}{\ding{46}} Punto de prueba.
+
+$$z_{1}\,=\,5\,-\,4i$$
+
+$$f(z_{1})\,=\,(z_{1})^{2}\,=\,(5\,-\,4i)^{2}\,=\,25\,-\,40\,i\,-\,16\,=\,9\,-\,40\,i$$
+
+
+$$z_{2}\,=\,3\,+\,2i$$
+
+$$f(z_{2})\,=\,(z_{2})^{2}\,=\,(3\,+\,2i)^{2}\,=\,9\,+\,12\,i\,-\,4\,=\,5\,+\,12\,i$$
 
 \begin{center}
 \textbf{Límites}
@@ -218,8 +245,7 @@ $$(\,1\,+\,i\,)^{2}\,=\,2\,i$$
 
 $$\dfrac{\,2\,i\,\,+\,1}{\,2\,\,i\,-\,1} \times \dfrac{\,2\,i\,\,+\,1}{\,2\,\,i\,+\,1} $$
 
-$$\dfrac{-\,4+\,2i\,\,+\,2i\,+\,1}{\,(2\,\,i)^{2}\,-\,1} \iff \dfrac{-\,3\,+\,4i\,}{\,-\,5} \iff \boxed{\dfrac{\,3\,}{\,\,5} + \dfrac{\,4i\,}{\,\,5}  }$$ 
-
+$$\dfrac{-\,4+\,2i\,\,+\,2i\,+\,1}{\,(2\,\,i)^{2}\,-\,1} \iff \dfrac{-\,3\,+\,4i\,}{\,-\,5} \iff \boxed{\dfrac{\,3\,}{\,\,5} - \dfrac{\,4i\,}{\,\,5}  }$$
 
 \textcolor{ao(english)}{(\,9\,)} $\bf{\displaystyle\lim_{z \to 3\,+\,i\,\sqrt{2}}\,\dfrac{z\,+\,3\,-\,i\,\sqrt{2}}{z^{2}\,+\,6\,z\,+\,11}}$
 
