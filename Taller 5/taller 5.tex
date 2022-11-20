@@ -113,7 +113,29 @@ Evalue las sigientes integrales a lo largo del controno indicado en cada caso.\\
 
 \textcolor{ao(english)}{(\,2\,)} $\bf{\displaystyle\int\limits_{C}\,(2\,\overline{z}\,-\,z)\,dz}$, \qquad donde \qquad $C$ es $x\,=\,-\,t \quad;\quad y\,=\,t^{2}\,+\,2 \quad;\quad 0\,\leq\,t\,\leq\,2$.
 
-\textcolor{ao(english)}{(\,3\,)} $\bf{\displaystyle\int\limits_{C}\,z^{2}\,dz}$, \qquad donde \qquad $C$ es $z\,(t)\,=\,3\,t\,-\,2\,i\,t \quad;\quad -\,2\,\leq\,t\,\leq\,2$.
+\textcolor{ao(english)}{(\,3\,)} $\bf{\displaystyle\int\limits_{C}\,z^{2}\,dz}$, \qquad donde \qquad $C$ es $z\,(t)\,=\,3\,t\,-\,2\,i\,t \quad;\quad -\,2\,\leq\,t\,\leq\,2$.\\
+
+\textcolor{ao(english)}{\ding{47}\,Paso 1:} Escribir $z$ en terminos del parámetro.
+
+$$z\,(t)\,=\,3\,t\,-\,2\,i\,t$$
+
+\textcolor{ao(english)}{\ding{47}\,Paso 2:} Escribir $dz$ en terminos del parámetro.
+
+$$\dfrac{dz}{dt}\,=\,3\,-\,2\,i \quad\iff\quad dz\,=\,(3\,-\,2\,i)\,dt$$
+
+\textcolor{ao(english)}{\ding{47}\,Paso 3:} Escribir $f\,(z)$ en terminos del parámetro.
+
+$$f\,(z)\,=\,z^{2}\,=\,(3\,t\,-\,2\,i\,t)^{2}\,=\,9\,t^{2}\,-\,12\,i\,t^{2}\,-\,4\,t^{2}\,=\,5\,t^{2}\,-\,12\,i\,t^{2}$$
+
+\textcolor{ao(english)}{\ding{47}\,Paso 4:} Escribir la integral.
+
+$$\displaystyle\int\limits_{C}\,z^{2}\,dz\,=\,\displaystyle\int_{-\,2}^{2}\,(5\,t^{2}\,-\,12\,i\,t^{2})\,(3\,-\,2\,i)\,dt\,=\,(3\,-\,2\,i)\,\displaystyle\int_{-\,2}^{2}\,(5\,t^{2}\,-\,12\,i\,t^{2})\,dt$$
+
+$$=\,(3\,-\,2\,i)\,\left(\dfrac{5\,t^{3}}{3}\,-\,4\,i\,t^{3}\right)\bigg|_{-\,2}^{2}\,=\,(3\,-\,2\,i)\,\left[\dfrac{5(2^{3})}{3}\,-\,\dfrac{5((-\,2)^{3})}{3}\,-\,(4\,i\,(2^{3})\,-\,4\,i\,((-\,2)^{3}))\right]$$
+
+$$=\,(3\,-\,2\,i)\,\left[\dfrac{40}{3}\,+\,\dfrac{40}{3}\,-\,(32\,i\,+\,32\,i)\right]\,=\,(3\,-\,2\,i)\,\left(\dfrac{80}{3}-\,64\,i\right)$$
+
+$$=\,80\,-\,192\,i\,-\,\dfrac{160\,i}{3}\,-\,128\,=\,\boxed{-\,48\,-\,\dfrac{736\,i}{3}}$$
 
 \textcolor{ao(english)}{(\,4\,)} $\bf{\displaystyle\oint\limits_{C}\,(2\,z\,-\,1)\,dz}$.
 
@@ -142,6 +164,46 @@ Ejercicios \textbf{(\,8\,)} al \textbf{(\,10\,)}. Evalúe cada integral dada a c
 \end{center}
 
 \textcolor{ao(english)}{(\,9\,)} $\bf{\displaystyle\oint\limits_{C}\,(z\,+\,\dfrac{1}{z})\,dz}, \qquad |\,z\,|\,=\,2$.
+
+$$\displaystyle\oint\limits_{C}\,(z\,+\,\dfrac{1}{z})\,dz\,=\,\underbrace{\displaystyle\oint\limits_{C}\,z\,dz}_{I_{1}}\,+\,\underbrace{\displaystyle\oint\limits_{C}\,\dfrac{1}{z}\,dz}_{I_{2}}$$
+
+\begin{tcolorbox}[colback=ao(english)!5!white,colframe=ao(english)!75!black,fonttitle=\bfseries,title=\sf $I_{1}$]
+
+\textcolor{ao(english)}{\ding{46}} Grafica.
+
+\begin{center}
+     \includegraphics[width=8cm]{Gra-Ej-9-1.png}
+\end{center}
+
+\textcolor{ao(english)}{\ding{46}} Justificación.\\
+
+$C$ es un controno cerrado simple, con $\mathnormal{Dom\,(f)}\,=\,\mathbb C$ y  es un dominio simplemente conexo. La $f\,(z)\,=\,z$ es Analitica por lo tanto el valor de esta integral es:
+
+$$\displaystyle\oint\limits_{C}\,z\,dz\,=\,0$$
+
+\end{tcolorbox}
+
+\newpage
+
+\begin{tcolorbox}[colback=ao(english)!5!white,colframe=ao(english)!75!black,fonttitle=\bfseries,title=\sf $I_{2}$]
+
+La $f\,(z)\,=\,\dfrac{1}{z}$ es indeterminada y no esta definida en $z\,=\,0$.\\
+
+\textcolor{ao(english)}{\ding{46}} Grafica.
+
+\begin{center}
+     \includegraphics[width=8cm]{Gra-Ej-9-2.png}
+\end{center}
+
+\textcolor{ao(english)}{\ding{46}} Justificación.\\
+
+$\mathnormal{Dom\,(f)}\,=\,\mathbb C\,-\,\{0\}$ es un Dominio doblemente conexo; y ya que $z\,=\,0$ está dentron del controno $C$ el valor de esta integral es:
+
+$$\displaystyle\oint\limits_{C}\,\dfrac{1}{z}\,dz\,=\,2\,\pi\,i$$
+
+\end{tcolorbox}
+
+$$\displaystyle\oint\limits_{C}\,(z\,+\,\dfrac{1}{z})\,dz\,=\,0\,+\,2\,\pi\,i\,=\,2\,\pi\,i$$
 
 \textcolor{ao(english)}{(\,10\,)} $\bf{\displaystyle\oint\limits_{C}\,\dfrac{-\,3\,z\,+\,2}{z^{2}\,-\,8\,z\,+\,12}\,dz}, \qquad (\,a\,)\,|z\,-\,5|\,=\,2 \qquad (\,b\,)\,|\,z\,|\,=\,9$.
 
