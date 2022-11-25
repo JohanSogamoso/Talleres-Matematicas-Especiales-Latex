@@ -111,6 +111,79 @@ Evalue las sigientes integrales a lo largo del controno indicado en cada caso.\\
      \includegraphics[width=10cm]{figura-1.JPG}
 \end{center}
 
+
+El contorno está dado por:\\
+
+$$C_{1} \quad\iff\quad x\,=\,y,\,0\leq\,x\,\leq,\,y\,=\,0$$
+
+$$C_{2} \quad\iff\quad 1\leq\,x\,\leq\,2,\,y\,=\,1$$
+
+$\bf{\displaystyle\int\limits_{C_{1}}\,f(z)\,dz}$.\\
+
+\textcolor{ao(english)}{\ding{47}\,Paso 1:} Escribir $z$ en terminos del parámetro.
+
+$$z\,=\,x\,+\,i\,y \qquad\iff\qquad z\,=\,x\,+\,i\,x$$
+
+\textcolor{ao(english)}{\ding{47}\,Paso 2:} Escribir $dz$ en terminos del parámetro.
+
+$$\dfrac{dz}{dx}\,=\,1\,+\,i \quad\iff\quad dz\,=\,(1\,+\,i)\,dx$$
+
+\textcolor{ao(english)}{\ding{47}\,Paso 3:} Escribir $f\,(z)$ en terminos del parámetro.
+
+$$f\,(z)\,=\,(5\,-\,z^{2}\,+\,2\,z)\,=\,5\,-\,(x\,+\,i\,x)^{2}\,+\,2\,(x\,+\,i\,x)$$
+
+\textcolor{ao(english)}{\ding{47}\,Paso 4:} Escribir la integral.
+
+$$\bf{\displaystyle\int\limits_{C_{1}}\,f(z)\,dz}\,=\,\displaystyle\int_{0}^{1}\,[5\,-\,(x\,+\,i\,x)^{2}\,+\,2\,(x\,+\,i\,x)]\,(1\,+\,i)\,dx$$
+
+$$=\,(1\,+\,i)\,\displaystyle\int_{0}^{1}\,[5\,-\,(x\,+\,i\,x)^{2}\,+\,2\,(x\,+\,i\,x)]\,dx$$
+
+$$=\,(1\,+\,i)\,\displaystyle\int_{0}^{1}\,[5\,-\,(x^{2}\,+\,2\,x^{2}\,i\,-\,x^{2})\,+\,2\,x\,+\,2\,x\,i)]\,dx$$
+
+$$=\,(1\,+\,i)\,\displaystyle\int_{0}^{1}\,[5\,-\,2\,x^{2}\,i\,+\,2\,x\,+\,2\,x\,i)]\,dx$$
+
+$$=\,(1\,+\,i)\,\left(5\,x\,-\dfrac{2\,x^{3}\,i}{3}\,+\,\dfrac{2\,x^{2}}{2}+\,\dfrac{2\,x^{2}\,i}{2}\bigg|_{0}^{1}\,\right)$$
+
+$$=\,(1\,+\,i)\,\left(5\,x\,-\dfrac{2\,i}{3}\,+\,1\,+\,\dfrac{3\,i}{3}\bigg|_{0}^{1}\,\right)$$
+
+$$=\,(1\,+\,i)\,\left(6\,+\,\dfrac{i}{3}\right)$$
+
+$$=\,6\,+\,\dfrac{i}{3}\,+\,6\,i\,-\,\dfrac{1}{3} \qquad=\qquad\,\dfrac{17}{3}\,+\,\dfrac{19\,i}{3}$$
+
+$\bf{\displaystyle\int\limits_{C_{2}}\,f(z)\,dz}$.\\
+
+\textcolor{ao(english)}{\ding{47}\,Paso 1:} Escribir $z$ en terminos del parámetro.
+
+$$z\,=\,x\,+\,i\,y \qquad\iff\qquad z\,=\,x\,+\,i$$
+
+\textcolor{ao(english)}{\ding{47}\,Paso 2:} Escribir $dz$ en terminos del parámetro.
+
+$$\dfrac{dz}{dx}\,=\,1 \quad\iff\quad dz\,=\,dx$$
+
+\textcolor{ao(english)}{\ding{47}\,Paso 3:} Escribir $f\,(z)$ en terminos del parámetro.
+
+$$f\,(z)\,=\,(5\,-\,z^{2}\,+\,2\,z)\,=\,5\,-\,(x\,+\,i)^{2}\,+\,2\,(x\,+\,i)$$
+
+\textcolor{ao(english)}{\ding{47}\,Paso 4:} Escribir la integral.
+
+$$\bf{\displaystyle\int\limits_{C_{2}}\,f(z)\,dz}\,=\,\displaystyle\int_{1}^{2}\,[5\,-\,(x\,+\,i)^{2}\,+\,2\,(x\,+\,i)]\,dx$$
+
+$$=\,\displaystyle\int_{1}^{2}\,[5\,-\,(x^{2}\,+\,2\,x\,i\,-\,1)\,+\,2\,x\,+\,2\,i)]\,dx$$
+
+$$=\,\displaystyle\int_{1}^{2}\,[5\,-\,x^{2}\,-\,2\,x\,i\,+\,1\,+\,2\,x\,+\,2\,i)]\,dx$$
+
+$$=\,\left(6\,x\,-\dfrac{x^{3}}{3}\,-\,\dfrac{2\,x^{2}\,i}{2}+\,\dfrac{2\,x^{2}}{2}\,+\,2\,x\,i\,\right)\bigg|_{1}^{2}$$
+
+$$=\,\left(12\,-\dfrac{8}{3}\,-\,4\,i\,+\,4\,+\,4\,i\,\right)\,-\,\left(6\,-\dfrac{1}{3}\,-\,i\,+\,1\,+\,2\,i\right)$$
+
+$$=\,12\,-\dfrac{8}{3}\,-\,4\,i\,+\,4\,+\,4\,i\,-\,6\,+\dfrac{1}{3}\,+\,i\,-\,1\,-\,2\,i$$
+
+$$=\,9\,-\,\dfrac{8}{3}\,-\,3\,i\,+\,\dfrac{1}{3} \qquad=\qquad\,\dfrac{20}{3}\,-\,i$$
+
+$$\bf{\displaystyle\int\limits_{C}\,=\,\displaystyle\int\limits_{C_{1}}\,+\,\displaystyle\int\limits_{C_{2}}\,=\,\dfrac{17}{3}\,+\,\dfrac{19\,i}{3}\,+\,\dfrac{20}{3}\,-\,i\,=\,\dfrac{37}{3}\,+\,\dfrac{16\,i}{3}}$$
+
+
+
 \textcolor{ao(english)}{(\,2\,)} $\bf{\displaystyle\int\limits_{C}\,(2\,\overline{z}\,-\,z)\,dz}$, \qquad donde \qquad $C$ es $x\,=\,-\,t \quad;\quad y\,=\,t^{2}\,+\,2 \quad;\quad 0\,\leq\,t\,\leq\,2$.
 
 \textcolor{ao(english)}{(\,3\,)} $\bf{\displaystyle\int\limits_{C}\,z^{2}\,dz}$, \qquad donde \qquad $C$ es $z\,(t)\,=\,3\,t\,-\,2\,i\,t \quad;\quad -\,2\,\leq\,t\,\leq\,2$.\\
