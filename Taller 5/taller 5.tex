@@ -186,6 +186,33 @@ $$\bf{\displaystyle\int\limits_{C}\,=\,\displaystyle\int\limits_{C_{1}}\,+\,\dis
 
 \textcolor{ao(english)}{(\,2\,)} $\bf{\displaystyle\int\limits_{C}\,(2\,\overline{z}\,-\,z)\,dz}$, \qquad donde \qquad $C$ es $x\,=\,-\,t \quad;\quad y\,=\,t^{2}\,+\,2 \quad;\quad 0\,\leq\,t\,\leq\,2$.
 
+
+\textcolor{ao(english)}{\ding{47}\,Paso 1:} Escribir $z$ en terminos del parámetro.
+
+$$z\,(t)\,=\,-\,t\,+\,i\,(t^{2}\,+\,2) \iff z\,(t)\,=\,-\,t\,+\,i\,t^{2}\,+\,2\,i)$$
+
+\textcolor{ao(english)}{\ding{47}\,Paso 2:} Escribir $dz$ en terminos del parámetro.
+
+$$\dfrac{dz}{dt}\,=-\,1\,+\,2\,i\,t \quad\iff\quad dz\,=\,(-\,1\,+\,2\,i\,t)\,dt$$
+
+\textcolor{ao(english)}{\ding{47}\,Paso 3:} Escribir $f\,(z)$ en terminos del parámetro.
+
+$$f\,(z)\,=\,2\,\overline{z}\,-\,z\,=\,2(-\,t\,-\,i(t^{2}\,+\,2))\,-\,(\,-\,t\,+\,i(t^{2}\,+\,2))\, $$
+
+$$f\,(z)\,= \,-\,2\,t\,-\,2\,i\,t^{2}\,-\,4\,i\,+\,t\,-\,i\,t^{2}\,-2\,i  $$
+
+$$f\,(z)\,= \,-\,3i\,t^{2}\,-\,t\,-\,6i\,  $$
+
+\textcolor{ao(english)}{\ding{47}\,Paso 4:} Escribir la integral.
+
+$$\displaystyle\int\limits_{C}\,2\,\overline{z}\,-\,z\,dz\,=\,\displaystyle\int_{0}^{2}\,(-\,3i\,t^{2}\,-\,t\,-\,6i\,)\,(-\,1\,+\,2\,i\,t)\,dt\,$$
+
+$$\displaystyle\int_{0}^{2}\,3\,i\,t^{2}\,+\,6\,t^{3}\,+\,t\,-\,2\,i\,t^{2}\,+\,6\,i\,+\,12\,t\, dt\,$$
+
+$$=\,\left(  3i\dfrac{t^{3}}{3}\,+\,6\dfrac{t^{4}}{4}\,+\,\dfrac{t^{2}}{2}\,-\,2i\dfrac{t^{3}}{3}\,+\,6it\,+\,12t\right)\bigg|_{0}^{2}\,=\,8i\,+\,24\,+\,2\,-\,\dfrac{16i}{3}\,+\,12i\,+\,24$$
+
+$$=\,50\,+\,20i\,-\,\dfrac{16i}{3}\,\,=\boxed{50\,+\,\dfrac{44i}{3}} $$
+
 \textcolor{ao(english)}{(\,3\,)} $\bf{\displaystyle\int\limits_{C}\,z^{2}\,dz}$, \qquad donde \qquad $C$ es $z\,(t)\,=\,3\,t\,-\,2\,i\,t \quad;\quad -\,2\,\leq\,t\,\leq\,2$.\\
 
 \textcolor{ao(english)}{\ding{47}\,Paso 1:} Escribir $z$ en terminos del parámetro.
@@ -216,6 +243,40 @@ $$=\,80\,-\,192\,i\,-\,\dfrac{160\,i}{3}\,-\,128\,=\,\boxed{-\,48\,-\,\dfrac{736
      \includegraphics[width=8cm]{figura-2.JPG}
 \end{center}
 
+$$\displaystyle\oint\limits_{C_{1}}\,(2\,z\,-\,1)\,dz \quad;\quad \,0\,\leq\,x\,\leq\,1 \quad;\quad y=0 $$
+
+$$ z\,=\,x\,+\,iy\,\iff \,z\,=\,x\, $$
+
+$$ \dfrac{dz}{dx}\,=\,1\, \iff dz\,=\,dx $$
+
+$$ \,f(x)\,=\,2(x)-1 = \displaystyle\int_{0}^{1}\,2\,x\,-\,1\,dx\,=\,\dfrac{2\,x^{2}}{2}\,-\,x \bigg|_{0}^{1}\,=\,1\,-\,1\,=\,0$$
+
+$$\displaystyle\oint\limits_{C_{2}}\,(2\,z\,-\,1)\,dz \quad;\quad \,0\,\leq\,y\,\leq\,1 \quad;\quad x=1 $$
+
+$$ z\,=\,x\,+\,iy\,\iff \,z\,=\,1\,+\,i\,y\, $$
+
+$$ \dfrac{dz}{dy}\,=0\,+\,i\, \iff dz\,=\,i\,dy $$
+
+$$ \,f(x)\,=\,2(\,1\,+\,i\,y\,)-1 = 1\,+\,2\,i\,y = \displaystyle\int_{0}^{1}\,(1\,+\,2\,i\,y)\,i\,dy\,$$
+
+$$ \displaystyle\int_{0}^{1}\,i\,-\,2y\,dy\,=iy\,-\,\dfrac{2\,y^{2}}{2}\, \bigg|_{0}^{1}\,=\,i\,-\,1\,=\,-\,1\,+\,i\,$$
+---
+
+$$\displaystyle\oint\limits_{C_{3}}\,(2\,z\,-\,1)\,dz \quad;\quad \,1\,\leq\,y\,\leq\,0 \quad;\quad x=y $$
+
+$$ z\,=\,x\,+\,iy\,\iff \,z\,=\,y\,+\,i\,y\, $$
+
+$$ \dfrac{dz}{dy}\,= 1\,+\,i\, \iff dz\,=1\,+\,i\,\,dy $$
+
+$$ \,f(x)\,=\,2(y\,+\,i\,y\,)-1 = \displaystyle\int_{1}^{0}\,2(y+iy)-1\,dz\,$$
+
+$$ =\displaystyle\int_{1}^{0}\,(2y+2iy-1)(1+i)\,\,dy\,= \displaystyle\int_{1}^{0}\,4\,i\,y\,-\,1\,-\,i\,\,dy\,= \dfrac{\,4\,i\,y^{2}}{2}\,-\,y\,-\,i\,y\, \bigg|_{1}^{0}\,$$
+
+$$ = -\,(\,2\,i\,-\,1\,-\,i\,)\,=\,-\,1\,+\,i\, $$
+
+$$\displaystyle\oint\limits_{C} = \displaystyle\oint\limits_{C_{1}} + \displaystyle\oint\limits_{C_{2}} +\displaystyle\oint\limits_{C_{3}} = \,0\,-\,1\,+\,i\,-\,1+i\, = \boxed{\,-\,2\,+\,2\,i\,} $$
+
+
 \begin{center}
 \textbf{Teoremas de Cauchy y de Cauchy - Goursat}
 \end{center}
@@ -226,6 +287,19 @@ Ejercicios \textbf{(\,5\,)} al \textbf{(\,7\,)}. Usando los procedimientos visto
 
 \textcolor{ao(english)}{(\,6\,)} $\bf{f\,(z)\,=\,\dfrac{z}{2\,z\,+\,3}}$.
 
+\textcolor{ao(english)}{\ding{46}} Grafica.
+\begin{center}
+     \includegraphics[width=8cm]{Gra-Ej-6.png}
+\end{center}
+
+
+\textcolor{ao(english)}{\ding{46}} Justificación.\\
+Dado que el punto $z=-\dfrac{3}{2}$ donde la funcion es indeterminada esta fuera del contorno $C$
+y la funcion  $f\,(z)\,=\,\dfrac{z}{2\,z\,+\,3}$ es analitica, por ende:   \\
+
+$$\oint_{C}\,f\,(z)\,dz\,=\,0$$
+
+
 \textcolor{ao(english)}{(\,7\,)} $\bf{f\,(z)\,=\,\dfrac{e^{z}\,+\,2\,i}{(z^{2}\,-\,25)\,(z^{2}\,+\,9)}}$.\\
 
 Ejercicios \textbf{(\,8\,)} al \textbf{(\,10\,)}. Evalúe cada integral dada a continuación usando los procedimientos vistos en clase \textbf{justificando su respuesta}. El controno se muestra en la figura o se indica en el correspondiete ejercicio.\\
@@ -235,6 +309,16 @@ Ejercicios \textbf{(\,8\,)} al \textbf{(\,10\,)}. Evalúe cada integral dada a c
 \begin{center}
      \includegraphics[width=8cm]{figura-3.JPG}
 \end{center}
+
+\begin{center}
+     \includegraphics[width=8cm]{Gra-Ej-8.png}
+\end{center}
+
+\textcolor{ao(english)}{\ding{46}} Justificación.\\
+
+$\mathnormal{Dom\,(f)}\,=\,\mathbb C\,-\,\{0\}$ es un Dominio doblemente conexo; y ya que $z\,=\,0$ está dentron del controno $C$ el valor de esta integral es:
+
+$$\displaystyle\oint\limits_{C}\,\dfrac{1}{z}\,dz\,=\,2\,\pi\,i$$
 
 \textcolor{ao(english)}{(\,9\,)} $\bf{\displaystyle\oint\limits_{C}\,(z\,+\,\dfrac{1}{z})\,dz}, \qquad |\,z\,|\,=\,2$.
 
