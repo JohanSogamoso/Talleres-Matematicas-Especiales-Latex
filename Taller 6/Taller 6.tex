@@ -1,0 +1,140 @@
+\documentclass[a4paper,11pt,openany]{book}
+\usepackage[utf8]{inputenc}
+\usepackage[left=2.54cm,top=2.54cm,right=2.54cm,bottom=2.54cm]{geometry}
+\usepackage[spanish]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{color}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{pifont}
+\usepackage{marvosym}
+\newtheorem{teo}{Teorema}
+\newtheorem{ejemplo}{Ejemplo}
+\newtheorem{defi}{Definición}
+\newtheorem{coro}{Corolario}
+\newtheorem{prueba}{Prueba}
+\newtheorem{exmp}{Example}[section]
+\newtheorem{ejer}{Ejercicio}[section]
+\def\proof{\paragraph{\textsf{Demostración.} }}
+\def\endproof{\hfill $\blacksquare$ \\}
+\usepackage{multirow, array} % para las tablas
+\usepackage{multirow}
+\usepackage{tabularx}
+\usepackage{float} % para usar [H]
+\usepackage{tikz}
+\usepackage[all]{xy}
+\usepackage{cancel}
+\usetikzlibrary{positioning}
+\usepackage{enumitem}
+\newcommand*{\itembolasazules}[1]{% bolas 3D
+\footnotesize\protect\tikz[baseline=-3pt]%
+\protect\node[scale=.7, circle, shade, ball
+color=green]{\color{white}\Large\bf#1};}
+\usepackage{tcolorbox} 
+\tcbuselibrary{listingsutf8}
+\newtcolorbox[auto counter,number within=section]{example}[2][]
+{colback=green!5!white,colframe=green!75!black,fonttitle=\bfseries, title=Ejercicio~\thetcbcounter: #2,#1}
+\usepackage{background}
+\backgroundsetup{
+placement=center,
+angle=0,
+scale=1.1,
+contents= {{\includegraphics{HojaCuadriculada.png}}}
+}
+ 
+ 
+\begin{document}
+\begin{titlepage}
+ 
+\begin{center}
+\vspace*{-1in}
+\begin{figure}[htb]
+\begin{center}
+\includegraphics[width=7cm]{ETITC.png}
+\end{center}
+\end{figure}
+ 
+ 
+{\sc \huge Escuela Tecnológica Instituto Técnico Central (ETITC)}\\
+\vspace*{0.15in}
+Facultad de sistemas\\
+\vspace*{0.6in}
+\begin{Large}
+\textbf{Taller 6: Sucesiones y Series Complejas.} \\
+\textbf{Matem{\'a}ticas Especiales}\\
+\end{Large}
+\vspace*{0.3in}
+\begin{large}
+{\bf Autores} \\
+ 
+\ 
+ 
+Sergio Alejandro Enrrique Caballero Leon\\ 
+Johan Alejandro Sogamoso Camacho \\
+David Andrés Valero Vanegas \\
+\end{large}
+\vspace*{0.3in}
+ 
+\end{center}
+ 
+\begin{center}
+{\bf Presentado a:} \\
+ 
+\ 
+ 
+Carlos Romero \\
+ 
+\
+ 
+Bogot{\'a}, Diciembre de 2022.
+\end{center}
+ 
+\end{titlepage}
+
+\newpage
+
+\definecolor{ao(english)}{rgb}{0.0, 0.5, 0.0}
+
+\definecolor{mediumviolet-red}{rgb}{0.78, 0.08, 0.52}
+
+\definecolor{mint}{rgb}{0.24, 0.71, 0.54}
+
+\begin{center}
+\textbf{Sucesiones Complejas}
+\end{center}
+
+En los ejercicios \textbf{(\,1\,)} y \textbf{(\,2\,)} escriba los primeros cinco términos de la {\it sucesión} dada.\\
+
+\textcolor{ao(english)}{(\,1\,)} $\bf{\{5\,i^{n}\}}$.
+
+\textcolor{ao(english)}{(\,2\,)} $\bf{\{2\,+\,(-\,i)^{n}\}}$.
+
+En los ejercicios \textbf{(\,3\,)} al \textbf{(\,6\,)} use le \textcolor{mediumviolet-red}{{\it Teorema} 1} para mostrar si la sucesión dada en cada caso es {\it Covergente ó Divergente}. En caso de ser covergente, muestre a cuál número converge.\\
+
+\textcolor{ao(english)}{(\,3\,)} $\bf{\left\{\dfrac{3\,n\,i\,+\,2}{n\,+\,n\,i}\right\}}$.
+
+\textcolor{ao(english)}{(\,4\,)} $\bf{\left\{\dfrac{n\,i\,+\,2}{3\,n\,i\,+\,5}\right\}}$.
+
+\textcolor{ao(english)}{(\,5\,)} $\bf{\left\{\dfrac{(n\,i\,+\,2)^{2}}{n^{2}i}\right\}}$.
+
+\textcolor{ao(english)}{(\,6\,)} $\bf{\{z_{n}\}\,=\,\left\{\dfrac{4\,n\,+\,3\,n\,i}{2\,n\,+\,i}\right\}}$.
+
+\begin{center}
+\textbf{Series Complejas}
+\end{center}
+
+En los ejercicios \textbf{(\,7\,)} al \textbf{(\,11\,)} muestre si la \textcolor{mint}{{\it Serie Geométrica}} dada es Covergente ó Divergente. En caso de ser covergente, muestre a cuál número converge.\\
+
+\textcolor{ao(english)}{(\,7\,)} $\bf{\displaystyle\sum\limits_{k\,=\,0}^{\infty}\,(1\,-\,i)^{k}}$.
+
+\textcolor{ao(english)}{(\,8\,)} $\bf{\displaystyle\sum\limits_{k\,=\,1}^{\infty}\,4\,i\,\left(\dfrac{1}{3}\right)^{k\,-\,1}}$.
+
+\textcolor{ao(english)}{(\,9\,)} $\bf{\displaystyle\sum\limits_{k\,=\,1}^{\infty}\,\left(\dfrac{i}{2}\right)^{k}}$.
+
+\textcolor{ao(english)}{(\,10\,)} $\bf{\displaystyle\sum\limits_{k\,=\,0}^{\infty}\,\dfrac{1}{2}\,i^{k}}$.
+
+\textcolor{ao(english)}{(\,11\,)} $\bf{\displaystyle\sum\limits_{k\,=\,0}^{\infty}\,3\,\left(\dfrac{2}{1\,+\,2i}\right)^{k}}$
+
+\end{document}
