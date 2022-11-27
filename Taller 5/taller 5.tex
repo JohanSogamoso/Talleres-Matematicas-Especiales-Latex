@@ -187,7 +187,7 @@ $$\bf{\displaystyle\int\limits_{C}\,=\,\displaystyle\int\limits_{C_{1}}\,+\,\dis
 
 \textcolor{ao(english)}{\ding{47}\,Paso 1:} Escribir $z$ en términos del parámetro.
 
-$$z\,(t)\,=\,-\,t\,+\,i\,(t^{2}\,+\,2) \iff z\,(t)\,=\,-\,t\,+\,i\,t^{2}\,+\,2\,i)$$
+$$z\,(t)\,=\,-\,t\,+\,i\,(t^{2}\,+\,2) \iff z\,(t)\,=\,-\,t\,+\,i\,t^{2}\,+\,2\,i$$
 
 \textcolor{ao(english)}{\ding{47}\,Paso 2:} Escribir $dz$ en términos del parámetro.
 
@@ -270,9 +270,9 @@ $$ \,f(x)\,=\,2(y\,+\,i\,y\,)-1 = \displaystyle\int_{1}^{0}\,2(y+iy)-1\,dz$$
 
 $$ =\displaystyle\int_{1}^{0}\,(2y+2iy-1)(1+i)\,\,dy\,= \displaystyle\int_{1}^{0}\,4\,i\,y\,-\,1\,-\,i\,\,dy\,= \dfrac{\,4\,i\,y^{2}}{2}\,-\,y\,-\,i\,y\, \bigg|_{1}^{0}$$
 
-$$ = -\,(\,2\,i\,-\,1\,-\,i\,)\,=\,-\,1\,+\,i $$
+$$ = -\,(\,2\,i\,-\,1\,-\,i\,)\,=\,1\,-\,i $$
 
-$$\displaystyle\oint\limits_{C} = \displaystyle\oint\limits_{C_{1}} + \displaystyle\oint\limits_{C_{2}} +\displaystyle\oint\limits_{C_{3}} = \,0\,-\,1\,+\,i\,-\,1+i\, = \boxed{\,-\,2\,+\,2\,i\,} $$
+$$\displaystyle\oint\limits_{C} = \displaystyle\oint\limits_{C_{1}} + \displaystyle\oint\limits_{C_{2}} +\displaystyle\oint\limits_{C_{3}} = \,0\,-\,1\,+\,i\,+\,1\,-\,i\, = \boxed{\,0\,} $$
 
 
 \begin{center}
@@ -303,7 +303,7 @@ $$\oint\limits_{C}\,f\,(z)\,dz\,=\,0$$
 
 \textcolor{ao(english)}{\ding{46}} Justificación.\\
 
-Dado que el punto $z=-\dfrac{3}{2}$ donde la función es indeterminada esta fuera del contorno $C$
+Dado que el punto $z=-\dfrac{3}{2}$ donde la función es indeterminada (dado que al reemplazar z por $-\dfrac{3}{2}$ en el denominador da 0), esta fuera del contorno $C$
 y la función  $f\,(z)\,=\,\dfrac{z}{2\,z\,+\,3}$ es analítica, por ende:
 
 $$\oint\limits_{C}\,f\,(z)\,dz\,=\,0$$
@@ -366,7 +366,7 @@ $$\dfrac{dz}{dt}\,=\,i\,e^{i\,t} \quad\iff\quad dz\,=\,i\,e^{i\,t}\,dt$$
 
 Usando el principio de deformación de contornos tenemos que:
 
-$$\displaystyle\oint\limits_{C}\,\dfrac{z^{2}\,+\,1}{z}\,dz\,=\,\displaystyle\oint\limits_{C_{1}}\,f\,(z)\,dz\,=\,\displaystyle\int_{0}^{2\,\pi}\,\dfrac{(e^{i\,t})^{2}\,+\,1}{e^{i\,t}}\,(i\,e^{i\,t})\,dt\,=\,\displaystyle\int_{0}^{2\,\pi}\,i\,e^{2\,i\,t}\,+\,i\,dt$$
+$$\displaystyle\oint\limits_{C}\,\dfrac{z^{2}\,+\,1}{z}\,dz\,=\,\displaystyle\oint\limits_{C_{1}}\,f\,(z)\,dz\,=\,\displaystyle\int_{0}^{2\,\pi}\,\dfrac{(e^{i\,t})^{2}\,+\,1}{\cancel{e^{i\,t}}}\,(i\,\cancel{e^{i\,t}})\,dt\,=\,\displaystyle\int_{0}^{2\,\pi}\,i\,e^{2\,i\,t}\,+\,i\,dt$$
 
 $$=\,\left(\dfrac{e^{2\,i\,t}}{2}\,+\,i\,t\right)\bigg|_{0}^{2\,\pi}\,=\,\dfrac{e^{4\,\pi\,i\,}}{2}\,+\,2\,\pi\,i$$
 
