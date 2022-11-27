@@ -358,6 +358,42 @@ $$\displaystyle\oint\limits_{C}\,\dfrac{z^{2}\,+\,1}{z}\,dz\,=\,\displaystyle\oi
 
 $$=\,\left(\dfrac{e^{2\,i\,t}}{2}\,+\,i\,t\right)\bigg|_{0}^{2\,\pi}\,=\,\dfrac{e^{4\,\pi\,i\,}}{2}\,+\,2\,\pi\,i$$
 
-\textcolor{ao(english)}{(\,10\,)} $\bf{\displaystyle\oint\limits_{C}\,\dfrac{-\,3\,z\,+\,2}{z^{2}\,-\,8\,z\,+\,12}\,dz}, \qquad (\,a\,)\,|z\,-\,5|\,=\,2 \qquad (\,b\,)\,|\,z\,|\,=\,9$.
+\textcolor{ao(english)}{(\,10\,)} $\bf{\displaystyle\oint\limits_{C}\,\dfrac{-\,3\,z\,+\,2}{z^{2}\,-\,8\,z\,+\,12}\,dz}, \qquad (\,a\,)\,|z\,-\,5|\,=\,2 \qquad (\,b\,)\,|\,z\,|\,=\,9$.\\
+
+$\textcolor{ao(english)}{(\,a\,)}\,|z\,-\,5|\,=\,2$
+
+\begin{center}
+     \includegraphics[width=8cm]{Gra-Ej-10a.png}
+\end{center}
+
+\textcolor{ao(english)}{\ding{46}} Justificación.\\
+
+Factorizando el denominador para hallar los puntos del plano donde $f(z)$ es indeterminada:
+
+$$z^{2}\,-\,8\,z\,+\,12 \qquad = \qquad (z\,-\,6)(z\,-\,2) \quad\iff\quad z_{1}\,=\,6\,,\,z_{2}\,=\,2$$\\
+
+$$\displaystyle\oint\limits\,\dfrac{-\,3\,z\,+\,2}{(z\,-\,6)(z\,-\,2)}\,dz$$
+
+Resolvemos la integral por fracciones parciales:
+
+$$\dfrac{(-\,3\,z\,+\,2)\cancel{(z\,-\,6)(z\,-\,2)}}{\cancel{(z\,-\,6)(z\,-\,2)}}\,=\,\dfrac{A\,\cancel{(z\,-\,6)}(z\,-\,2)}{\cancel{(z\,-\,6)}}\,+\,\dfrac{B\,(z\,-\,6)\cancel{(z\,-\,2)}}{\cancel{(z\,-\,2)}}$$
+
+$$-\,3\,z\,+\,2\,=\,A(z\,-\,2)\,+\,B(z\,-\,6)$$
+
+Si $z\,=\,2\iff\,-\,4\,=\,0\,+\,-\,4B\iff\,1\,=\,B$
+
+Si $z\,=\,6\iff\,-\,16\,=\,4A\,+\,0\iff\,-\,4\,=\,A$\\
+
+La integral nos queda:
+
+$$\displaystyle\oint\limits\,\dfrac{-\,3\,z\,+\,2}{(z\,-\,6)(z\,-\,2)}\,dz\,=\,-\,4\,\displaystyle\oint\limits_{c}\,\dfrac{dz}{z\,-\,6}\,+\,\displaystyle\oint\limits_{c}\,\dfrac{dz}{z\,-\,2}\,=\,-\,8\,\pi\,i$$\\
+
+$\textcolor{ao(english)}{(\,b\,)}\,|z|\,=\,9$
+
+\begin{center}
+     \includegraphics[width=8cm]{Gra-Ej-10b.png}
+\end{center}
+
+$$\displaystyle\oint\limits\,\dfrac{-\,3\,z\,+\,2}{(z\,-\,6)(z\,-\,2)}\,dz\,=\,-\,4\,\displaystyle\oint\limits_{c}\,\dfrac{dz}{z\,-\,6}\,+\,\displaystyle\oint\limits_{c}\,\dfrac{dz}{z\,-\,2}\,=\,-\,8\,\pi\,i\,+\,2\,\pi\,i\,=\,-\,6\,\pi\,i$$\\
 
 \end{document}
