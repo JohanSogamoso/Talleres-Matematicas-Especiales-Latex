@@ -114,18 +114,21 @@ $$\{5\,i^{n}\}\,=\,5\,i,\,-\,5,\,-\,5\,i,\,5,\,5\,i,\,....$$
 \textcolor{ao(english)}{(\,2\,)} $\bf{\{2\,+\,(-\,i)^{n}\}}$.
 
 $$ Z_{1}\,=\,2\,-\,i $$
+
 $$ Z_{2}\,=\,2\,-\,1 \iff Z_{1}\,=\,1  $$
+
 $$ Z_{3}\,=\,2\,+\,i $$
+
 $$ Z_{4}\,=\,2\,+\,1 \iff Z_{4}\,= 3$$
+
 $$ Z_{5}\,=\,2\,-\,i $$
 
 En los ejercicios \textbf{(\,3\,)} al \textbf{(\,6\,)} use le \textcolor{mediumviolet-red}{{\it Teorema} 1} para mostrar si la sucesión dada en cada caso es {\it Covergente ó Divergente}. En caso de ser covergente, muestre a cuál número converge.\\
 
 \textcolor{ao(english)}{(\,3\,)} $\bf{\left\{\dfrac{3\,n\,i\,+\,2}{n\,+\,n\,i}\right\}}$.
 
-\textcolor{ao(english)}{(\,4\,)} $\bf{\left\{\dfrac{n\,i\,+\,2}{3\,n\,i\,+\,5}\right\}}$.
+\textcolor{ao(english)}{(\,4\,)} $\bf{\left\{\dfrac{n\,i\,+\,2}{3\,n\,i\,+\,5}\right\}}$.\\
 
-. \\
  Remplazo $"n"$ con el mayor denominador:
  
  $$\dfrac{\dfrac{n i}{n}+\dfrac{2}{n}}{\dfrac{3n i}{n}+\dfrac{5}{n}} = \dfrac{i+\dfrac{2}{n}}{3i+\dfrac{5}{n}} \times \dfrac{3i-\dfrac{5}{n}}{3i-\dfrac{5}{n}} = \dfrac{\left(i+ \dfrac{2}{n} \right) \left(3i- \dfrac{5}{n} \right)}{ (3i)^{2} -\left( \dfrac{5}{n} \right)^{2} } $$
@@ -154,9 +157,8 @@ $\therefore$ la sucesión converge a $\mathnormal{L}\,=\,x\,+\,i\,y$
 
 $$\mathnormal{L}\,=\,i$$
 
-\textcolor{ao(english)}{(\,6\,)} $\bf{\{z_{n}\}\,=\,\left\{\dfrac{4\,n\,+\,3\,n\,i}{2\,n\,+\,i}\right\}}$.
+\textcolor{ao(english)}{(\,6\,)} $\bf{\{z_{n}\}\,=\,\left\{\dfrac{4\,n\,+\,3\,n\,i}{2\,n\,+\,i}\right\}}$.\\
 
-. \\
 Remplazo $"n"$ con el mayor denominador:
 
 $$\dfrac{\dfrac{4n}{n}+\dfrac{3ni}{n}}{\dfrac{2n}{n}+\dfrac{i}{n}} = \dfrac{ 4 +3i }{2+\dfrac{i}{n}} $$
@@ -165,22 +167,36 @@ $$\displaystyle\lim_{n \to \infty} \dfrac{ 4 +3i }{2+\dfrac{i}{n}} => \dfrac{ 4 
 
 $$\mathnormal{L}\,=\, 2+\dfrac{3i}{2}$$
 
-. \\
-
 \begin{center}
 \textbf{Series Complejas}
 \end{center}
 
 En los ejercicios \textbf{(\,7\,)} al \textbf{(\,11\,)} muestre si la \textcolor{mint}{{\it Serie Geométrica}} dada es Covergente ó Divergente. En caso de ser covergente, muestre a cuál número converge.\\
 
-\textcolor{ao(english)}{(\,7\,)} $\bf{\displaystyle\sum\limits_{k\,=\,0}^{\infty}\,(1\,-\,i)^{k}}$.
+\textcolor{ao(english)}{(\,7\,)} $\bf{\displaystyle\sum\limits_{k\,=\,0}^{\infty}\,(1\,-\,i)^{k}}$.\\
+
+\textcolor{ao(english)}{\ding{46}} Expandimos la serie geométrica para hallar el termino constante $a$.
+
+$$=\,\textcolor{blue}{1}\,+\,\textcolor{blue}{1}\,(1\,-\,i)\,+\,\textcolor{blue}{1}\,(1\,-\,i)^{2}\,+\,...$$
+
+$$a\,=\,1$$
+
+\textcolor{ao(english)}{\ding{46}} Hallar el número al que converge si $|z|\,<\,1$.
+
+$$|z|\,=\,|1\,-\,i|\,=\,\sqrt{1^{2}\,+\,(-\,1)^{2}}\,=\,\sqrt{2}\,\approx\,1.41$$
+
+$\therefore\,|z|\,>\,1$ la Serie Geométrica es Divergente.\\
 
 \textcolor{ao(english)}{(\,8\,)} $\bf{\displaystyle\sum\limits_{k\,=\,1}^{\infty}\,4\,i\,\left(\dfrac{1}{3}\right)^{k\,-\,1}}$.
 
 $$k_{1}=4i $$
+
 $$k_{2}=4i \times \dfrac{1}{3} = \dfrac{4i}{3}$$
+
 $$k_{3}=4i \times \left(\dfrac{1}{3} \right)^{2} = \dfrac{4i}{9} $$
+
 $$k_{4}=4i \times \left(\dfrac{1}{3} \right)^{3} = \dfrac{4i}{27} $$
+
 $$ a=4i \quad z=\dfrac{1}{3} $$
 
 \providecommand{\abs}[1]{\lvert#1\rvert} 
@@ -189,13 +205,31 @@ Comprobando si $\abs{z} < 1$
 .\\
 
 $$\sqrt{\left( \dfrac{1}{3} \right)^{2}}= \left( \dfrac{1}{3} \right) = 0.33$$
+
 $$ Sn = \dfrac{a}{1-z} => \dfrac{4i}{1-\dfrac{1}{3}} => \dfrac{\dfrac{4i}{1}}{\dfrac{2}{3}} = \dfrac{12i}{2}$$
+
 $$ Sn = \mathnormal{L}\,= 6i $$
 
 \textcolor{ao(english)}{(\,9\,)} $\bf{\displaystyle\sum\limits_{k\,=\,1}^{\infty}\,\left(\dfrac{i}{2}\right)^{k}}$.
 
 \textcolor{ao(english)}{(\,10\,)} $\bf{\displaystyle\sum\limits_{k\,=\,0}^{\infty}\,\dfrac{1}{2}\,i^{k}}$.
 
-\textcolor{ao(english)}{(\,11\,)} $\bf{\displaystyle\sum\limits_{k\,=\,0}^{\infty}\,3\,\left(\dfrac{2}{1\,+\,2i}\right)^{k}}$
+\textcolor{ao(english)}{(\,11\,)} $\bf{\displaystyle\sum\limits_{k\,=\,0}^{\infty}\,3\,\left(\dfrac{2}{1\,+\,2\,i}\right)^{k}}$\\
+
+\textcolor{ao(english)}{\ding{46}} El termino constante $a$ de la serie geométrica es:
+
+$$a\,=\,3$$
+
+\textcolor{ao(english)}{\ding{46}} Hallar el número al que converge si $|z|\,<\,1$.
+
+$$z\,=\,\dfrac{2}{1\,+\,2\,i}\,\textcolor{red}{\times\,\dfrac{1\,-\,2\,i}{1\,-\,2\,i}}\,=\,\dfrac{2\,-\,4\,i}{5}$$
+
+$$|z|\,=\,\left|\dfrac{2\,-\,4i}{5}\right|\,\dfrac{|2\,-\,4\,i|}{|5|}\,=\,\dfrac{\sqrt{2^{2}\,+\,(-\,4)^{2}}}{5}\,=\,\dfrac{\sqrt{4\,+\,16}}{5}\,=\,\dfrac{\sqrt{20}}{5}\,=\,\dfrac{2\,\sqrt{5}}{5}\,\approx\,0.9$$
+
+\textcolor{ao(english)}{\ding{46}} Como $|z|\,<\,1$, entonces la serie converge.
+
+$$Sn\,=\,\dfrac{a}{1\,-\,z}\,=\,\dfrac{3}{1\,-\,\left(\dfrac{2\,-\,4\,i}{5}\right)}\,=\,\dfrac{3}{\dfrac{5\,-\,2\,+\,4\,i}{5}}\,=\,\dfrac{15}{3\,+\,4\,i}\,\textcolor{red}{\times\,\dfrac{3\,-\,\,4\,i}{3\,-\,4\,i}}\,=\,\dfrac{45\,-\,60\,i}{25}\,=\,\dfrac{9\,-\,12\,i}{5}$$
+
+la serie converge a $L\,=\,\dfrac{9}{5}\,-\,\dfrac{12}{5}\,i$
 
 \end{document}
